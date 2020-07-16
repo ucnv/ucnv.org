@@ -1,0 +1,43 @@
+<%
+  var sitename = "ucnv.org";
+  var isindex = !page.name;
+  var title = (isindex ? '' : page.name + ' - ') + sitename;
+  var description = page.description ? page.description : '';
+  var ogimage = page.ogimage ? page.ogimage : "https://ucnv.org/assets/images/og.jpg";
+
+%><!doctype html>
+<html>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#04b77e">
+<meta charset="utf-8">
+<title><%= title %></title>
+<meta name="description" content="<%= description %>">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ucnv.org/">
+<meta property="og:site_name" content="<%= sitename %>">
+<meta property="og:title" content="<%= title %>">
+<meta property="og:description" content="<%= description %>">
+<meta property="og:image" content="<%= ogimage %>">
+<meta property="fb:app_id" content="">
+<meta name="twitter:card" content="<%= isindex ? 'summary_large_image' : 'summary' %>">
+<meta name="twitter:site" content="@ucnv">
+<meta name="twitter:title" content="<%= title %>">
+<meta name="twitter:description" content="<%= description %>">
+<meta name="twitter:image" content="<%= ogimage %>">
+<link rel="shortcut icon" href="/assets/favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600,600i,700" rel="stylesheet">
+<link rel="stylesheet" href="/assets/a.css?v3">
+<script src="/assets/a.js?v3"></script>
+</head>
+<body class="<%= page.id %>">
+<header>
+  <h1><a class="<% if (page.id == 'index') { %><%= ' focus' %><% } %>" href="/">ucnv</a></h1>
+  <nav>
+    <ul><%
+    ['works', 'upcoming', 'about'].forEach(function(id) { %>
+      <li><a class="<%= id %><% if (page.id == id) { %><%= ' focus' %><% } %>" href="/<%= id %>.html"><%= id.charAt(0).toUpperCase() + id.slice(1) %></a></li><%
+    }) %>
+    </ul>
+  </nav>
+</header>

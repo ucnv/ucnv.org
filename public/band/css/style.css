@@ -1,0 +1,112 @@
+body {
+  color: #eee;
+  background-color: #111;
+  text-align: center;
+  font-family: Times, serif;
+  line-height: 1.2;
+}
+#container {
+  margin: 0 auto;
+  width: 800px;
+  text-align: left;
+}
+h1 {
+  margin: 0 0 60px 0;
+  text-align: center;
+  letter-spacing: -20px;
+  font-family: serif;
+  font-size: 80px;
+  line-height: .7;
+  font-weight: normal;
+  font-family: "ヒラギノ明朝 Pro W3", "MS P 明朝", Times, serif;
+}
+h1 .alphabet {
+  letter-spacing: -5px;
+  padding-left: .2em;
+}
+h2 {
+  font-weight: normal;
+  letter-spacing: -1px;
+}
+.footer {
+  clear: both;
+  text-align: center;
+  margin: 40px auto;
+}
+#upcoming {
+  width: 825px;
+  margin: -10px 0 0 -10px;
+}
+.vevent {
+  position: relative;
+  background-color: #aaa;
+  width: 250px;
+  height: 300px;
+  margin: 0 5px 10px 0;
+  float: left;
+  color: #111;
+  overflow: hidden;
+  border: 10px solid #111;
+}
+.vevent.highlight {
+  border: 10px solid #f0f;
+}
+.vevent .wrap {
+  width: 250px;
+  height: 363px;
+  background: transparent url(../img/line.gif) repeat top left;
+}
+.vevent .summary {
+  letter-spacing: -13px;
+  margin: -63px -20px -35px -20px;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 145px;
+  font-family: Georgia, serif;
+}
+.vevent .summary.baseline {
+  margin-bottom: -57px;
+}
+.vevent .location, .vevent .location a {
+  color: #111;
+  text-align: right;
+  line-height: .9;
+  letter-spacing: -1px;
+  margin: 20px 0 5px 0;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 25px;
+  font-family: Georgia, serif;
+  text-decoration: none;
+}
+.vevent .location a:hover {
+  background: #f0f url(../img/line2.gif) repeat top left;
+}
+.vevent p {
+  text-align: right;
+  margin: 0 1px;
+}
+.vevent .description {
+  text-align: left;
+  font-size: 9px;
+  margin-left: 10px;
+}
+.vevent a.url {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  font-size: medium;
+  width: 5em;
+  text-align: center;
+  display: block;
+  background-color: #111;
+  color: #ccc;
+  padding: 2px 5px;
+}
+.vevent .url:hover {
+  background: #f0f url(../img/line2.gif) repeat top left;
+  color: #111;
+}
+#past {
+  display: none;
+}
