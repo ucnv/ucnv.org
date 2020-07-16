@@ -1,0 +1,64 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Yamachan's face blurring</title>
+<style>
+  body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+  #container {
+    width: 800px;
+    height: 600px;
+  }
+</style>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script>
+var sv = null, pos = 0, interval = 7000, data = [
+  {latlng: [35.173569,136.878275], heading: 58.18, zoom: 0, pitch: 1.62}, 
+  {latlng: [35.140972,136.902683], heading: 30.38, zoom: 0, pitch: 18.0}, 
+  {latlng: [35.696512,139.775921], heading: 214.97, zoom: 1, pitch: -4.75}, 
+  {latlng: [35.167396,136.88894], heading: 101.38, zoom: 0, pitch: -0.85}, 
+  {latlng: [35.173082,136.879257], heading: 299.23, zoom: 1, pitch: 6.94}, 
+  {latlng: [35.167998,136.893925], heading: 28.11, zoom: 0, pitch: -4.43}, 
+  {latlng: [35.165866,136.910187], heading: 40.73, zoom: 0, pitch: 10.59}, 
+  {latlng: [35.144088,136.90593], heading: 84.48, zoom: 0, pitch: 0.23}, 
+  {latlng: [35.169986,136.922543], heading: 307.95, zoom: 0, pitch: 10.76}, 
+  {latlng: [35.696264,139.70049], heading: 61.1, zoom: 0, pitch: -0.51}, 
+  {latlng: [35.529187,139.700164], heading: 280.39, zoom: 1, pitch: 4.66}, 
+  {latlng: [35.726406,139.711662], heading: 297.24, zoom: 1, pitch: 8.04}, 
+  {latlng: [35.733162,139.710727], heading: 185.04, zoom: 1, pitch: 1.69}, 
+  {latlng: [35.648153,139.745072], heading: 149.83, zoom: 1, pitch: -2.34}, 
+  {latlng: [35.726148,139.712723], heading: 196.98, zoom: 3, pitch: -10.98}
+];
+
+var resize = function() {
+  var c = document.getElementById('container');
+  c.style.height = window.innerHeight + 'px';
+  c.style.width = window.innerWidth + 'px';
+}
+var setSV = function() {
+  pos = pos % data.length;
+  var d = data[pos];
+  sv.setPosition(new google.maps.LatLng(d.latlng[0], d.latlng[1]));
+  sv.setPov({
+    heading: d.heading,
+    pitch: d.pitch,
+    zoom: d.zoom
+  });
+  pos += 1;
+  setTimeout(setSV, interval);
+};
+window.addEventListener('resize', resize);
+window.onload = function() {
+  sv = new google.maps.StreetViewPanorama(document.getElementById('container'));
+  setSV();
+  resize();
+}
+
+
+</script>
+<div id="container"></div>
+
+
+

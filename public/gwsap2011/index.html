@@ -1,0 +1,54 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Glitch Workshop After Party</title>
+<style>
+body {background: #000;}
+</style>
+<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<div style="width:500px;margin:30px auto;">
+<div><img src="xflyer01.gif" alt="" ></div>
+<div id="m" style="width:500px;height:143px;margin-top:-4px;"></div>
+</div>
+<script type="text/javascript">
+
+window.onload = function() {
+  var map;
+  var pos = new google.maps.LatLng(35.718469, 139.772658);
+  var stylez = [
+    {
+      featureType: "all",
+      elementType: "",
+      stylers: [
+        { hue: '#760090' },
+        { saturation: 100 }
+      ]
+    }
+  ];
+
+  var mapOptions = {
+    zoom: 15,
+    center: pos,
+    mapTypeControl: false,
+    streetViewControl: false,
+    navigationControl: true,
+    navigationControlOptions: {
+      style: google.maps.NavigationControlStyle.SMALL
+    },
+    mapTypeId: 'a'
+  };
+
+  map = new google.maps.Map(document.getElementById("m"), mapOptions);
+
+  var styledMapOptions = {
+    name: "a"
+  };
+  var t = new google.maps.StyledMapType(stylez, styledMapOptions);
+  map.mapTypes.set('a', t);
+
+  var marker = new google.maps.Marker({
+    position: pos, 
+    map: map
+  });
+
+}
+</script>

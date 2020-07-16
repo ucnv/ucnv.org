@@ -1,0 +1,96 @@
+<!doctype html>
+<meta charset="utf-8" />
+<title>ucnv.org</title>
+<style>
+* {
+  font-family: Times, serif;
+}
+a {
+  font-size: 420px;
+}
+a:hover {
+  color: #fff;
+  background-color: #518;
+}
+.hidden {
+  display: none;
+}
+::selection, ::-moz-selection {
+  color: #fff;
+  background-color: #000;
+}
+</style>
+
+<a href="../">index</a>
+
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-10549214-2']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script>
+window.onload = function() {
+  var f0 = function() { return (Math.random() * 2 > 1) ? '0' : 'f'; };
+  var container = document.createElement('div');
+  container.style.position = 'absolute';
+  container.style.width = '100%';
+  container.style.height = '100%';
+  container.style.top = '0px';
+  container.style.left = '0px';
+  container.style.zIndex = '-100';
+  container.style.overflow = 'hidden';
+  var sw = screen.width < 1024 ? 1024 : screen.width;
+  var sh = screen.height < 1024 ? 1024 : screen.height;
+  var canvas1 = document.createElement('canvas');
+  var w = canvas1.width = sw;
+  var h = canvas1.height = sh;
+  var ctx = canvas1.getContext('2d');
+  ctx.strokeStyle = '#' + f0() + f0() + f0();
+  ctx.lineWidth = 5;
+  for(var i = 0; i < w; i += 10) {
+    ctx.moveTo(i, 0);
+    ctx.lineTo(i + 10, h);
+  }
+  ctx.stroke();
+  container.appendChild(canvas1);
+
+  var canvas2 = document.createElement('canvas');
+  w = canvas2.width = sw * 2;
+  h = canvas2.height = sh * 2;
+  ctx = canvas2.getContext('2d');
+  ctx.strokeStyle = '#' + f0() + f0() + f0();
+  var r = Math.random() * 100;
+  ctx.lineWidth = 5;
+  for(var i = 0; i < w * 2; i += 10) {
+    ctx.moveTo(i - w / 2, 0);
+    ctx.lineTo(i + r - w / 2, h);
+  }
+  ctx.stroke();
+  canvas2.style.position = 'absolute';
+  canvas2.style.top = '-' + (sw / 2) + 'px';
+  canvas2.style.left = '0px';
+  container.appendChild(canvas2);
+
+  document.body.addEventListener('mousemove', function(e) {
+    canvas2.style.left = (e.screenX - sw) / 15 + 'px';
+    canvas2.style.top = (e.screenY - sh) + 'px';
+  }, false);
+
+  document.body.appendChild(container);
+}
+</script>
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-10549214-2']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>

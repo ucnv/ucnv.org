@@ -1,0 +1,4497 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tab. Glitch</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script>
+    </script>
+    <style>
+  #container {
+    width: 3300px;
+    margin: 300px 0 350px 0;
+    font-family: Times, serif;
+  }
+  #container #data {
+    margin: 5px 50px;
+    border-collapse: collapse;
+  }
+  #container #data td {
+  }
+  #container .desc {
+    margin: 6px 4px;
+    padding: 3px 0 0 5px;
+    width: 65px;
+    height: 88px;
+    border: 1px solid #000;
+    line-height: 1.4;
+    font-size: 5px;
+    background-color: #fff;
+  }
+  #container .desc dl {
+    margin: 0;
+  }
+  #container .desc dd {
+    margin-left: 3px;
+    font-size: 6px;
+  }
+  #container .desc .title,
+  #container .desc .options.none {
+    display: none;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 65px;
+    font-weight: normal;
+  }
+  .num {
+    text-align: center;
+    font-size: 6px;
+    font-style: italic;
+    padding: 3px 6px;
+  }
+
+  .b1, .jpeg-srgb, .jpeg-rgb, .jpegxr, .ilbm,
+  .png-none-interlaced, .png-noinflate {
+    background-color: #bee;
+  }
+  .b2, .jpeg-progressive, .jpeg2000, .png-up, .gif,
+  .tif-lzw {
+    background-color: #ebe;
+  }
+  .b3, .png-sub, .sgi, .pcx, .tif-nocomp {
+    background-color: #eeb;
+  }
+  .b4, .jpeg-cmyk, .png-peath-interlaced, .png-up-interlaced, 
+  .gif-interlaced, .tif-jpeg, .tga {
+    background-color: #bbe;
+  }
+  .b5, .png-peath,.png-sub-interlaced, .png-average-interlaced, .ppm,
+  .webp, .raw {
+    background-color: #beb;
+  }
+  .b6, .png-none, .png-average, .psd, .tif-zip, .bmp {
+    background-color: #ebb;
+  }
+
+  .bl {
+    border-left: 2px solid #000;
+  }
+  .br {
+    border-right: 2px solid #000;
+  }
+  .bt {
+    border-top: 2px solid #000;
+  }
+  .bb {
+    border-bottom: 2px solid #000;
+  }
+  .cap {
+    font-size: 45px;
+    padding: 10px;
+    text-align: center;
+  }
+  #desc {
+    -moz-column-count: 8;
+    -webkit-column-count: 8;
+    column-count: 8;
+    -moz-column-gap: 20px;
+    -webkit-column-gap: 20px;
+    column-gap: 20px;
+    margin: 300px 150px 0px 120px;
+    font-size: 12px;
+  }
+  #desc ol {
+    padding-left: 20px;
+  }
+  #desc h3 {
+    font-size: 18px;
+    margin-top: 3em;
+    margin-bottom: 0.2em;
+  }
+</style>
+</head>
+<body>
+<div id="container">
+<h1>Tab. Glitch</h1>
+<table id="data"><tr><td class=""></td>
+<td class="cap br" colspan="6">
+JPEG
+</td>
+<td class="cap br" colspan="6">
+JPEG 2000
+</td>
+<td class="cap br" colspan="6">
+PNG
+</td>
+<td class="cap br" colspan="5">
+SGI
+</td>
+<td class="cap br" colspan="5">
+PSD
+</td>
+<td class="cap br" colspan="3">
+PPM
+</td>
+<td class="cap br" colspan="3">
+PCX
+</td>
+<td class="cap" colspan="3">
+
+</td>
+<td class=""></td>
+<td class=""></td>
+</tr><tr><td class="b1"></td>
+<td class="num b1">1.</td>
+<td class="num b1">2.</td>
+<td class="num b1">3.</td>
+<td class="num b1">4</td>
+<td class="num b1">5.</td>
+<td class="num b1 br">6.</td>
+<td class="num b2">7.</td>
+<td class="num b2">8.</td>
+<td class="num b2">9.</td>
+<td class="num b2">10.</td>
+<td class="num b2">11.</td>
+<td class="num b2 br">12.</td>
+<td class="num b6">13.</td>
+<td class="num b6">14.</td>
+<td class="num b6">15.</td>
+<td class="num b5">16.</td>
+<td class="num b5">17.</td>
+<td class="num b5 br">18.</td>
+<td class="num b3">19.</td>
+<td class="num b3">20.</td>
+<td class="num b3">21.</td>
+<td class="num b3">22.</td>
+<td class="num b3 br">23.</td>
+<td class="num b6">24.</td>
+<td class="num b6">25.</td>
+<td class="num b6">26.</td>
+<td class="num b6">27.</td>
+<td class="num b6 br">28.</td>
+<td class="num b5">29.</td>
+<td class="num b5">20.</td>
+<td class="num b5 br">31.</td>
+<td class="num b3">32.</td>
+<td class="num b3">33.</td>
+<td class="num b3 br">34.</td>
+<td class="num b5">35.</td>
+<td class="num b5">36.</td>
+<td class="num b5">37.</td>
+<td class="b5"></td>
+<td class=""></td>
+</tr><tr><td class="num row b1">a.</td>
+<td class="jpeg-srgb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-swap-09</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-srgb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-decrease-08</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-srgb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-replace-26</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-srgb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-replace-01</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-srgb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-decrease-06</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-srgb br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-replace-19</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg2000">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg2000-decrease-02</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG 2000</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="jpeg2000">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg2000-replace-05</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG 2000</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="jpeg2000">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg2000-replace-03</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG 2000</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="jpeg2000">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg2000-replace-13</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG 2000</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="jpeg2000">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg2000-increase-04</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG 2000</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="jpeg2000 br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg2000-replace-01</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG 2000</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-none">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-none-replace-03</dd>
+<dt class="category">Category</dt><dd class="category">PNG None</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = None</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-none">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-none-decrease-03</dd>
+<dt class="category">Category</dt><dd class="category">PNG None</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = None</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-none">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-none-swap-07</dd>
+<dt class="category">Category</dt><dd class="category">PNG None</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = None</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-peath">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-peath-increase-02</dd>
+<dt class="category">Category</dt><dd class="category">PNG Peath</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Peath</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-peath">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-peath-replace-10</dd>
+<dt class="category">Category</dt><dd class="category">PNG Peath</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Peath</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-peath br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-peath-replace-00</dd>
+<dt class="category">Category</dt><dd class="category">PNG Peath</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Peath</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="sgi">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">sgi-replace-05</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">SGI</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="sgi">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">sgi-decrease-14</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">SGI</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="sgi">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">sgi-replace-01</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">SGI</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="sgi">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">sgi-decrease-04</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">SGI</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="sgi br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">sgi-increase-04</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">SGI</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="psd">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">psd-replace-00</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">PSD</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="psd">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">psd-swap-01</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">PSD</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="psd">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">psd-swap-02</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">PSD</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="psd">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">psd-replace-19</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">PSD</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="psd br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">psd-replace-05</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">PSD</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="ppm">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">ppm-increase-14</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">PPM</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="ppm">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">ppm-swap-09</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">PPM</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="ppm br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">ppm-increase-00</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">PPM</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="pcx">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">pcx-replace-12</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">PCX</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="pcx">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">pcx-increase-01</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">PCX</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="pcx br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">pcx-swap-01</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">PCX</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="raw bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">raw-increase-00</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">RAW</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="raw bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">raw-increase-04</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">RAW</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="raw bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">raw-replace-05</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">RAW</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="num row b5 bb">a.</td>
+<td class="cap bb">RAW</td>
+</tr><tr><td class="num row b1">b.</td>
+<td class="jpeg-srgb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-increase-03</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-srgb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-replace-06</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-srgb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-swap-03</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-srgb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-replace-34</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-srgb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-swap-19</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-srgb br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-replace-25</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg2000">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg2000-replace-06</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG 2000</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="jpeg2000">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg2000-swap-09</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG 2000</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="jpeg2000">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg2000-swap-01</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG 2000</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="jpeg2000">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg2000-decrease-01</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG 2000</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="jpeg2000">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg2000-decrease-04</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG 2000</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="jpeg2000 br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg2000-decrease-00</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG 2000</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-none">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-none-replace-01</dd>
+<dt class="category">Category</dt><dd class="category">PNG None</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = None</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-none">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-none-replace-10</dd>
+<dt class="category">Category</dt><dd class="category">PNG None</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = None</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-none">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-none-increase-00</dd>
+<dt class="category">Category</dt><dd class="category">PNG None</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = None</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-peath">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-peath-replace-19</dd>
+<dt class="category">Category</dt><dd class="category">PNG Peath</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Peath</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-peath">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-peath-swap-00</dd>
+<dt class="category">Category</dt><dd class="category">PNG Peath</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Peath</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-peath br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-peath-replace-01</dd>
+<dt class="category">Category</dt><dd class="category">PNG Peath</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Peath</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="sgi">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">sgi-increase-00</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">SGI</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="sgi">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">sgi-increase-02</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">SGI</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="sgi">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">sgi-swap-08</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">SGI</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="sgi">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">sgi-decrease-01</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">SGI</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="sgi br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">sgi-increase-01</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">SGI</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="psd">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">psd-replace-10</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">PSD</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="psd">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">psd-swap-06</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">PSD</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="psd">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">psd-replace-03</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">PSD</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="psd">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">psd-increase-01</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">PSD</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="psd br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">psd-replace-06</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">PSD</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="ppm bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">ppm-replace-04</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">PPM</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="ppm bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">ppm-swap-00</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">PPM</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="ppm bb br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">ppm-increase-04</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">PPM</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="pcx bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">pcx-replace-19</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">PCX</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="pcx bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">pcx-decrease-00</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">PCX</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="pcx bb br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">pcx-replace-07</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">PCX</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="bmp bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">bmp-increase-02</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">BMP</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="bmp bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">bmp-increase-18</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">BMP</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="bmp bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">bmp-replace-00</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">BMP</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="num row b6 bb">b.</td>
+<td class="cap bb">BMP</td>
+</tr><tr><td class="num row b1">c.</td>
+<td class="jpeg-srgb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-swap-11</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-srgb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-increase-02</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-srgb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-replace-09</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-srgb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-replace-02</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-srgb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-replace-07</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-srgb br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-replace-30</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg2000 bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg2000-replace-11</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG 2000</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="jpeg2000 bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg2000-decrease-03</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG 2000</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="jpeg2000 bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg2000-swap-03</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG 2000</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="jpeg2000 bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg2000-replace-18</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG 2000</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="jpeg2000 bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg2000-replace-07</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG 2000</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="jpeg2000 bb br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg2000-replace-16</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG 2000</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-none-interlaced">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-none-interlaced-replace-01</dd>
+<dt class="category">Category</dt><dd class="category">PNG None Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = None, Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-none-interlaced">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-none-interlaced-replace-09</dd>
+<dt class="category">Category</dt><dd class="category">PNG None Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = None, Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-none-interlaced">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-none-interlaced-swap-04</dd>
+<dt class="category">Category</dt><dd class="category">PNG None Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = None, Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-peath-interlaced">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-peath-interlaced-replace-02</dd>
+<dt class="category">Category</dt><dd class="category">PNG Peath Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Peath, Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-peath-interlaced">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-peath-interlaced-swap-04</dd>
+<dt class="category">Category</dt><dd class="category">PNG Peath Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Peath, Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-peath-interlaced br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-peath-interlaced-replace-19</dd>
+<dt class="category">Category</dt><dd class="category">PNG Peath Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Peath, Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="sgi bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">sgi-decrease-10</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">SGI</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="sgi bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">sgi-increase-13</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">SGI</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="sgi bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">sgi-replace-04</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">SGI</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="sgi bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">sgi-decrease-11</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">SGI</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="sgi bb br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">sgi-decrease-05</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">SGI</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="psd bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">psd-increase-00</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">PSD</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="psd bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">psd-replace-02</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">PSD</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="psd bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">psd-replace-11</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">PSD</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="psd bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">psd-replace-09</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">PSD</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="psd bb br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">psd-replace-04</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">PSD</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="tif-jpeg">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">tif-jpeg-replace-16</dd>
+<dt class="category">Category</dt><dd class="category">TIF JPEG</dd><dt class="format">File format:</dt>
+<dd class="format">TIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Compression: JPEG</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="tif-jpeg">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">tif-jpeg-replace-19</dd>
+<dt class="category">Category</dt><dd class="category">TIF JPEG</dd><dt class="format">File format:</dt>
+<dd class="format">TIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Compression: JPEG</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="tif-lzw">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">tif-lzw-replace-08</dd>
+<dt class="category">Category</dt><dd class="category">TIF LZW</dd><dt class="format">File format:</dt>
+<dd class="format">TIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Compression: LZW</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="tif-lzw">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">tif-lzw-replace-13</dd>
+<dt class="category">Category</dt><dd class="category">TIF LZW</dd><dt class="format">File format:</dt>
+<dd class="format">TIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Compression: LZW</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="tif-zip">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">tif-zip-replace-19</dd>
+<dt class="category">Category</dt><dd class="category">TIF ZIP</dd><dt class="format">File format:</dt>
+<dd class="format">TIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Compression: Deflate</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="tif-zip br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">tif-zip-swap-02</dd>
+<dt class="category">Category</dt><dd class="category">TIF ZIP</dd><dt class="format">File format:</dt>
+<dd class="format">TIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Compression: Deflate</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="tga bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">tga-increase-00</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">TGA</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="tga bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">tga-replace-05</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">TGA</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="tga bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">tga-increase-02</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">TGA</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="num row b4 bb">c.</td>
+<td class="cap bb">TGA</td>
+</tr><tr><td class="num row b1">d.</td>
+<td class="jpeg-rgb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-rgb-swap-13</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-rgb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-rgb-swap-04</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-rgb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-rgb-swap-08</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-rgb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-rgb-replace-02</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-cmyk">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-cmyk-decrease-04</dd>
+<dt class="category">Category</dt><dd class="category">JPEG CMYK</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = CMYK</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-cmyk">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-cmyk-swap-11</dd>
+<dt class="category">Category</dt><dd class="category">JPEG CMYK</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = CMYK</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-cmyk">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-cmyk-decrease-09</dd>
+<dt class="category">Category</dt><dd class="category">JPEG CMYK</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = CMYK</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-cmyk">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-cmyk-increase-06</dd>
+<dt class="category">Category</dt><dd class="category">JPEG CMYK</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = CMYK</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-cmyk">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-cmyk-replace-15</dd>
+<dt class="category">Category</dt><dd class="category">JPEG CMYK</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = CMYK</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-cmyk br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-cmyk-swap-00</dd>
+<dt class="category">Category</dt><dd class="category">JPEG CMYK</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = CMYK</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="png-sub">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-sub-increase-00</dd>
+<dt class="category">Category</dt><dd class="category">PNG Sub</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Sub</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-sub">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-sub-replace-10</dd>
+<dt class="category">Category</dt><dd class="category">PNG Sub</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Sub</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-sub">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-sub-replace-04</dd>
+<dt class="category">Category</dt><dd class="category">PNG Sub</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Sub</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-up">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-up-increase-00</dd>
+<dt class="category">Category</dt><dd class="category">PNG Up</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Up</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-up">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-up-swap-07</dd>
+<dt class="category">Category</dt><dd class="category">PNG Up</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Up</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-up">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-up-replace-12</dd>
+<dt class="category">Category</dt><dd class="category">PNG Up</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Up</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-average">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-average-replace-19</dd>
+<dt class="category">Category</dt><dd class="category">PNG Average</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Average</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-average">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-average-replace-10</dd>
+<dt class="category">Category</dt><dd class="category">PNG Average</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Average</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-average">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-average-replace-16</dd>
+<dt class="category">Category</dt><dd class="category">PNG Average</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Average</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-noinflate">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-none-noinflate-replace-08</dd>
+<dt class="category">Category</dt><dd class="category">PNG after Deflate</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = None</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace after deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-noinflate">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-average-noinflate-replace-09</dd>
+<dt class="category">Category</dt><dd class="category">PNG after Deflate</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Average</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace after deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-noinflate">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-none-noinflate-replace-11</dd>
+<dt class="category">Category</dt><dd class="category">PNG after Deflate</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = None</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace after deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-noinflate br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-peath-interlaced-noinflate-replace-04</dd>
+<dt class="category">Category</dt><dd class="category">PNG after Deflate</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Peath, Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace after deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-replace-42</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-replace-04</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-replace-07</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-replace-25</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-replace-01</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="tif-jpeg">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">tif-jpeg-swap-04</dd>
+<dt class="category">Category</dt><dd class="category">TIF JPEG</dd><dt class="format">File format:</dt>
+<dd class="format">TIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Compression: JPEG</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="tif-jpeg">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">tif-jpeg-replace-18</dd>
+<dt class="category">Category</dt><dd class="category">TIF JPEG</dd><dt class="format">File format:</dt>
+<dd class="format">TIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Compression: JPEG</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="tif-lzw">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">tif-lzw-replace-19</dd>
+<dt class="category">Category</dt><dd class="category">TIF LZW</dd><dt class="format">File format:</dt>
+<dd class="format">TIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Compression: LZW</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="tif-lzw">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">tif-lzw-replace-03</dd>
+<dt class="category">Category</dt><dd class="category">TIF LZW</dd><dt class="format">File format:</dt>
+<dd class="format">TIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Compression: LZW</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="tif-zip">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">tif-zip-swap-09</dd>
+<dt class="category">Category</dt><dd class="category">TIF ZIP</dd><dt class="format">File format:</dt>
+<dd class="format">TIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Compression: Deflate</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="tif-zip">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">tif-zip-replace-08</dd>
+<dt class="category">Category</dt><dd class="category">TIF ZIP</dd><dt class="format">File format:</dt>
+<dd class="format">TIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Compression: Deflate</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="tif-nocomp">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">tif-nocomp-decrease-14</dd>
+<dt class="category">Category</dt><dd class="category">TIF No Compression</dd><dt class="format">File format:</dt>
+<dd class="format">TIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Compression: Uncompressed</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="tif-nocomp">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">tif-nocomp-increase-01</dd>
+<dt class="category">Category</dt><dd class="category">TIF No Compression</dd><dt class="format">File format:</dt>
+<dd class="format">TIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Compression: Uncompressed</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="tif-nocomp">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">tif-nocomp-increase-10</dd>
+<dt class="category">Category</dt><dd class="category">TIF No Compression</dd><dt class="format">File format:</dt>
+<dd class="format">TIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Compression: Uncompressed</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="num row b3">d.</td>
+<td class="cap bb" rowspan="2">TIFF</td>
+</tr><tr><td class="num row b1">e.</td>
+<td class="jpeg-rgb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-rgb-replace-00</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-rgb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-rgb-increase-05</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-rgb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-rgb-replace-04</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-rgb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-rgb-replace-03</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-cmyk">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-cmyk-swap-17</dd>
+<dt class="category">Category</dt><dd class="category">JPEG CMYK</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = CMYK</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-cmyk">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-cmyk-replace-09</dd>
+<dt class="category">Category</dt><dd class="category">JPEG CMYK</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = CMYK</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-cmyk">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-cmyk-replace-27</dd>
+<dt class="category">Category</dt><dd class="category">JPEG CMYK</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = CMYK</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-cmyk">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-cmyk-replace-11</dd>
+<dt class="category">Category</dt><dd class="category">JPEG CMYK</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = CMYK</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-cmyk">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-cmyk-replace-46</dd>
+<dt class="category">Category</dt><dd class="category">JPEG CMYK</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = CMYK</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-cmyk br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-cmyk-replace-14</dd>
+<dt class="category">Category</dt><dd class="category">JPEG CMYK</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = CMYK</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="png-sub">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-sub-replace-19</dd>
+<dt class="category">Category</dt><dd class="category">PNG Sub</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Sub</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-sub">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-sub-decrease-04</dd>
+<dt class="category">Category</dt><dd class="category">PNG Sub</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Sub</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-sub">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-sub-swap-09</dd>
+<dt class="category">Category</dt><dd class="category">PNG Sub</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Sub</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-up">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-up-swap-01</dd>
+<dt class="category">Category</dt><dd class="category">PNG Up</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Up</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-up">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-up-replace-00</dd>
+<dt class="category">Category</dt><dd class="category">PNG Up</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Up</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-up">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-up-replace-18</dd>
+<dt class="category">Category</dt><dd class="category">PNG Up</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Up</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-average">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-average-replace-04</dd>
+<dt class="category">Category</dt><dd class="category">PNG Average</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Average</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-average">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-average-swap-07</dd>
+<dt class="category">Category</dt><dd class="category">PNG Average</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Average</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-average">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-average-decrease-04</dd>
+<dt class="category">Category</dt><dd class="category">PNG Average</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Average</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-noinflate">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-average-noinflate-replace-15</dd>
+<dt class="category">Category</dt><dd class="category">PNG after Deflate</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Average</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace after deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-noinflate">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-peath-interlaced-noinflate-replace-01</dd>
+<dt class="category">Category</dt><dd class="category">PNG after Deflate</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Peath, Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace after deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-noinflate">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-peath-interlaced-noinflate-replace-07</dd>
+<dt class="category">Category</dt><dd class="category">PNG after Deflate</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Peath, Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace after deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-noinflate br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-none-noinflate-replace-04</dd>
+<dt class="category">Category</dt><dd class="category">PNG after Deflate</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = None</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace after deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-replace-34</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-replace-29</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-replace-39</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-replace-30</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-replace-46</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="tif-jpeg bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">tif-jpeg-replace-03</dd>
+<dt class="category">Category</dt><dd class="category">TIF JPEG</dd><dt class="format">File format:</dt>
+<dd class="format">TIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Compression: JPEG</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="tif-jpeg bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">tif-jpeg-replace-17</dd>
+<dt class="category">Category</dt><dd class="category">TIF JPEG</dd><dt class="format">File format:</dt>
+<dd class="format">TIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Compression: JPEG</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="tif-lzw bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">tif-lzw-replace-11</dd>
+<dt class="category">Category</dt><dd class="category">TIF LZW</dd><dt class="format">File format:</dt>
+<dd class="format">TIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Compression: LZW</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="tif-lzw bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">tif-lzw-replace-00</dd>
+<dt class="category">Category</dt><dd class="category">TIF LZW</dd><dt class="format">File format:</dt>
+<dd class="format">TIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Compression: LZW</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="tif-zip bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">tif-zip-replace-12</dd>
+<dt class="category">Category</dt><dd class="category">TIF ZIP</dd><dt class="format">File format:</dt>
+<dd class="format">TIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Compression: Deflate</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="tif-zip bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">tif-zip-replace-16</dd>
+<dt class="category">Category</dt><dd class="category">TIF ZIP</dd><dt class="format">File format:</dt>
+<dd class="format">TIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Compression: Deflate</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="tif-nocomp bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">tif-nocomp-decrease-00</dd>
+<dt class="category">Category</dt><dd class="category">TIF No Compression</dd><dt class="format">File format:</dt>
+<dd class="format">TIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Compression: Uncompressed</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="tif-nocomp bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">tif-nocomp-replace-14</dd>
+<dt class="category">Category</dt><dd class="category">TIF No Compression</dd><dt class="format">File format:</dt>
+<dd class="format">TIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Compression: Uncompressed</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="tif-nocomp bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">tif-nocomp-replace-08</dd>
+<dt class="category">Category</dt><dd class="category">TIF No Compression</dd><dt class="format">File format:</dt>
+<dd class="format">TIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Compression: Uncompressed</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="num row b3 bb">e.</td>
+</tr><tr><td class="num row b1">f.</td>
+<td class="jpeg-rgb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-rgb-swap-17</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-rgb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-rgb-replace-17</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-rgb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-rgb-replace-34</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-rgb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-rgb-decrease-05</dd>
+<dt class="category">Category</dt><dd class="category">JPEG sRGB</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-cmyk">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-cmyk-increase-02</dd>
+<dt class="category">Category</dt><dd class="category">JPEG CMYK</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = CMYK</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-cmyk">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-cmyk-replace-06</dd>
+<dt class="category">Category</dt><dd class="category">JPEG CMYK</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = CMYK</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-cmyk">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-cmyk-replace-24</dd>
+<dt class="category">Category</dt><dd class="category">JPEG CMYK</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = CMYK</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-cmyk">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-cmyk-replace-01</dd>
+<dt class="category">Category</dt><dd class="category">JPEG CMYK</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = CMYK</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-cmyk">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-cmyk-replace-19</dd>
+<dt class="category">Category</dt><dd class="category">JPEG CMYK</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = CMYK</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-cmyk bb br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-cmyk-replace-26</dd>
+<dt class="category">Category</dt><dd class="category">JPEG CMYK</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = CMYK</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="png-sub-interlaced bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-sub-interlaced-replace-19</dd>
+<dt class="category">Category</dt><dd class="category">PNG Sub Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Sub, Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-sub-interlaced bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-sub-interlaced-swap-04</dd>
+<dt class="category">Category</dt><dd class="category">PNG Sub Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Sub, Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-sub-interlaced bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-sub-interlaced-decrease-04</dd>
+<dt class="category">Category</dt><dd class="category">PNG Sub Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Sub, Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-up-interlaced bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-up-interlaced-replace-17</dd>
+<dt class="category">Category</dt><dd class="category">PNG Up Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Up, Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-up-interlaced bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-up-interlaced-replace-06</dd>
+<dt class="category">Category</dt><dd class="category">PNG Up Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Up, Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-up-interlaced bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-up-interlaced-swap-00</dd>
+<dt class="category">Category</dt><dd class="category">PNG Up Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Up, Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-average-interlaced bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-average-interlaced-swap-00</dd>
+<dt class="category">Category</dt><dd class="category">PNG Average Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Average, Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-average-interlaced bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-average-interlaced-replace-16</dd>
+<dt class="category">Category</dt><dd class="category">PNG Average Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Average, Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-average-interlaced bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-average-interlaced-replace-01</dd>
+<dt class="category">Category</dt><dd class="category">PNG Average Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Average, Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace before deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-noinflate bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-none-noinflate-decrease-03</dd>
+<dt class="category">Category</dt><dd class="category">PNG after Deflate</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = None</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease after deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-noinflate bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-none-noinflate-replace-10</dd>
+<dt class="category">Category</dt><dd class="category">PNG after Deflate</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = None</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace after deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-noinflate bb">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-none-noinflate-replace-05</dd>
+<dt class="category">Category</dt><dd class="category">PNG after Deflate</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = None</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace after deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="png-noinflate bb br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">png-average-noinflate-replace-11</dd>
+<dt class="category">Category</dt><dd class="category">PNG after Deflate</dd><dt class="format">File format:</dt>
+<dd class="format">PNG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Filter type = Average</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace after deflate</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-replace-32</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-replace-24</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-replace-03</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-replace-11</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-replace-08</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="ilbm">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">ilbm-replace-13</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">ILBM</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="ilbm">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">ilbm-replace-05</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">ILBM</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="ilbm">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">ilbm-replace-17</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">ILBM</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="ilbm br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">ilbm-replace-19</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">ILBM</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="webp">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">webp-replace-09</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">WEBP</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">libwebp</dd>
+</dl></div>
+</td>
+<td class="webp">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">webp-swap-09</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">WEBP</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">libwebp</dd>
+</dl></div>
+</td>
+<td class="webp">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">webp-replace-05</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">WEBP</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">libwebp</dd>
+</dl></div>
+</td>
+<td class="webp">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">webp-replace-16</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">WEBP</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">libwebp</dd>
+</dl></div>
+</td>
+<td class="webp">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">webp-replace-02</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">WEBP</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">libwebp</dd>
+</dl></div>
+</td>
+<td class="num row b5">f.</td>
+<td class="cap" rowspan="3"></td>
+</tr><tr><td class="num row b2">g.</td>
+<td class="jpeg-progressive">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-progressive-replace-13</dd>
+<dt class="category">Category</dt><dd class="category">JPEG Progressive</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB, Progressive</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-progressive">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-progressive-replace-04</dd>
+<dt class="category">Category</dt><dd class="category">JPEG Progressive</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB, Progressive</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-progressive">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-progressive-replace-36</dd>
+<dt class="category">Category</dt><dd class="category">JPEG Progressive</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB, Progressive</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-progressive">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-progressive-increase-01</dd>
+<dt class="category">Category</dt><dd class="category">JPEG Progressive</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB, Progressive</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-progressive">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-progressive-replace-22</dd>
+<dt class="category">Category</dt><dd class="category">JPEG Progressive</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB, Progressive</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-progressive">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-progressive-decrease-02</dd>
+<dt class="category">Category</dt><dd class="category">JPEG Progressive</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB, Progressive</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-progressive">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-progressive-swap-08</dd>
+<dt class="category">Category</dt><dd class="category">JPEG Progressive</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB, Progressive</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-progressive">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-progressive-replace-25</dd>
+<dt class="category">Category</dt><dd class="category">JPEG Progressive</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB, Progressive</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-progressive br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-progressive-decrease-08</dd>
+<dt class="category">Category</dt><dd class="category">JPEG Progressive</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB, Progressive</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpegxr">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpegxr-replace-21</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG XR</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="jpegxr">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpegxr-replace-27</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG XR</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="jpegxr">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpegxr-replace-23</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG XR</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="jpegxr">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpegxr-replace-10</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG XR</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="jpegxr">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpegxr-swap-04</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG XR</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="jpegxr">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpegxr-replace-05</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG XR</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="jpegxr">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpegxr-replace-48</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG XR</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="jpegxr">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpegxr-replace-25</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG XR</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="jpegxr br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpegxr-replace-16</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG XR</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="gif-interlaced">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-interlaced-replace-01</dd>
+<dt class="category">Category</dt><dd class="category">GIF Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif-interlaced">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-interlaced-replace-18</dd>
+<dt class="category">Category</dt><dd class="category">GIF Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif-interlaced">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-interlaced-replace-44</dd>
+<dt class="category">Category</dt><dd class="category">GIF Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif-interlaced">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-interlaced-replace-07</dd>
+<dt class="category">Category</dt><dd class="category">GIF Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif-interlaced">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-interlaced-replace-35</dd>
+<dt class="category">Category</dt><dd class="category">GIF Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif-interlaced">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-interlaced-replace-24</dd>
+<dt class="category">Category</dt><dd class="category">GIF Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif-interlaced">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-interlaced-replace-22</dd>
+<dt class="category">Category</dt><dd class="category">GIF Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif-interlaced">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-interlaced-replace-28</dd>
+<dt class="category">Category</dt><dd class="category">GIF Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif-interlaced">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-interlaced-replace-00</dd>
+<dt class="category">Category</dt><dd class="category">GIF Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-replace-49</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="ilbm">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">ilbm-replace-16</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">ILBM</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="ilbm">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">ilbm-increase-02</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">ILBM</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="ilbm">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">ilbm-replace-12</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">ILBM</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="ilbm br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">ilbm-swap-09</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">ILBM</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="webp">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">webp-replace-03</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">WEBP</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">libwebp</dd>
+</dl></div>
+</td>
+<td class="webp">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">webp-decrease-03</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">WEBP</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">libwebp</dd>
+</dl></div>
+</td>
+<td class="webp">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">webp-replace-10</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">WEBP</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">libwebp</dd>
+</dl></div>
+</td>
+<td class="webp">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">webp-replace-17</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">WEBP</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">libwebp</dd>
+</dl></div>
+</td>
+<td class="webp">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">webp-decrease-02</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">WEBP</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">libwebp</dd>
+</dl></div>
+</td>
+<td class="num row b5">g.</td>
+</tr><tr><td class="num row b2">h.</td>
+<td class="jpeg-progressive">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-progressive-swap-15</dd>
+<dt class="category">Category</dt><dd class="category">JPEG Progressive</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB, Progressive</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-progressive">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-progressive-replace-24</dd>
+<dt class="category">Category</dt><dd class="category">JPEG Progressive</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB, Progressive</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-progressive">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-progressive-replace-17</dd>
+<dt class="category">Category</dt><dd class="category">JPEG Progressive</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB, Progressive</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-progressive">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-progressive-replace-23</dd>
+<dt class="category">Category</dt><dd class="category">JPEG Progressive</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB, Progressive</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-progressive">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-progressive-decrease-07</dd>
+<dt class="category">Category</dt><dd class="category">JPEG Progressive</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB, Progressive</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Decrease</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-progressive">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-progressive-replace-05</dd>
+<dt class="category">Category</dt><dd class="category">JPEG Progressive</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB, Progressive</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-progressive">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-progressive-replace-12</dd>
+<dt class="category">Category</dt><dd class="category">JPEG Progressive</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB, Progressive</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-progressive">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-progressive-swap-19</dd>
+<dt class="category">Category</dt><dd class="category">JPEG Progressive</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB, Progressive</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpeg-progressive br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpeg-srgb-progressive-replace-16</dd>
+<dt class="category">Category</dt><dd class="category">JPEG Progressive</dd><dt class="format">File format:</dt>
+<dd class="format">JPEG</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Colorspace = sRGB, Progressive</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">ImageMagick</dd>
+</dl></div>
+</td>
+<td class="jpegxr">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpegxr-replace-01</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG XR</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="jpegxr">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpegxr-replace-44</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG XR</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="jpegxr">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpegxr-replace-11</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG XR</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="jpegxr">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpegxr-replace-03</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG XR</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="jpegxr">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpegxr-replace-20</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG XR</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="jpegxr">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpegxr-replace-29</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG XR</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="jpegxr">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpegxr-replace-09</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG XR</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="jpegxr">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpegxr-replace-35</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG XR</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="jpegxr br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">jpegxr-replace-04</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">JPEG XR</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="gif-interlaced">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-interlaced-replace-47</dd>
+<dt class="category">Category</dt><dd class="category">GIF Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif-interlaced">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-interlaced-replace-37</dd>
+<dt class="category">Category</dt><dd class="category">GIF Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif-interlaced">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-interlaced-replace-23</dd>
+<dt class="category">Category</dt><dd class="category">GIF Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif-interlaced">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-interlaced-replace-45</dd>
+<dt class="category">Category</dt><dd class="category">GIF Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif-interlaced">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-interlaced-replace-29</dd>
+<dt class="category">Category</dt><dd class="category">GIF Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif-interlaced">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-interlaced-replace-03</dd>
+<dt class="category">Category</dt><dd class="category">GIF Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif-interlaced">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-interlaced-replace-49</dd>
+<dt class="category">Category</dt><dd class="category">GIF Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif-interlaced">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-interlaced-replace-09</dd>
+<dt class="category">Category</dt><dd class="category">GIF Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif-interlaced">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-interlaced-replace-46</dd>
+<dt class="category">Category</dt><dd class="category">GIF Interlaced</dd><dt class="format">File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options ">Compression options:</dt>
+<dd class="options ">Interlaced</dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="gif br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">gif-replace-19</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">GIF</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Preview (Mac OS)</dd>
+</dl></div>
+</td>
+<td class="ilbm">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">ilbm-replace-02</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">ILBM</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="ilbm">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">ilbm-increase-03</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">ILBM</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="ilbm">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">ilbm-swap-00</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">ILBM</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="ilbm br">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">ilbm-increase-01</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">ILBM</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">Adobe Photoshop</dd>
+</dl></div>
+</td>
+<td class="webp">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">webp-increase-01</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">WEBP</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">libwebp</dd>
+</dl></div>
+</td>
+<td class="webp">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">webp-replace-15</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">WEBP</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">libwebp</dd>
+</dl></div>
+</td>
+<td class="webp">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">webp-replace-07</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">WEBP</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Replace</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">libwebp</dd>
+</dl></div>
+</td>
+<td class="webp">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">webp-swap-00</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">WEBP</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Swap</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">libwebp</dd>
+</dl></div>
+</td>
+<td class="webp">
+<div class="desc">
+<dl><dt class="title">Title:</dt>
+<dd class="title">webp-increase-04</dd>
+<dt class="format category">Category / File format:</dt>
+<dd class="format">WEBP</dd>
+<dt class="options none">Compression options:</dt>
+<dd class="options none"></dd>
+<dt class="method">Glitch method:</dt>
+<dd class="method">Increase</dd>
+<dt class="normalize">Normalized with:</dt>
+<dd class="normalize">libwebp</dd>
+</dl></div>
+</td>
+<td class="num row b5">h.</td>
+</tr><tr><td class="num b2"></td>
+<td class="num b2">1.</td>
+<td class="num b2">2.</td>
+<td class="num b2">3.</td>
+<td class="num b2">4.</td>
+<td class="num b2">5.</td>
+<td class="num b2">6.</td>
+<td class="num b2">7.</td>
+<td class="num b2">8.</td>
+<td class="num b2 br">9.</td>
+<td class="num b1">10.</td>
+<td class="num b1">11.</td>
+<td class="num b1">12.</td>
+<td class="num b1">13.</td>
+<td class="num b1">14.</td>
+<td class="num b1">15.</td>
+<td class="num b1">16.</td>
+<td class="num b1">17.</td>
+<td class="num b1 br">18.</td>
+<td class="num b4">19.</td>
+<td class="num b4">20.</td>
+<td class="num b4">21.</td>
+<td class="num b4">22.</td>
+<td class="num b4">23.</td>
+<td class="num b4">24.</td>
+<td class="num b4">25.</td>
+<td class="num b4">26.</td>
+<td class="num b4">27.</td>
+<td class="num b2 br">28.</td>
+<td class="num b1">29.</td>
+<td class="num b1">30.</td>
+<td class="num b1">31.</td>
+<td class="num b1 br">32.</td>
+<td class="num b5">33.</td>
+<td class="num b5">34.</td>
+<td class="num b5">35.</td>
+<td class="num b5">36.</td>
+<td class="num b5">37.</td>
+<td class="b5"></td>
+<td class=""></td>
+</tr><tr><td class=""></td>
+<td class="cap br" colspan="9">
+</td>
+<td class="cap br" colspan="9">
+JPEG XR
+</td>
+<td class="cap br" colspan="10">
+GIF
+</td>
+<td class="cap br" colspan="4">
+ILBM
+</td>
+<td class="cap" colspan="5">
+WEBP
+</td>
+<td class=""></td>
+<td class=""></td>
+</tr></table>
+
+<div id="desc">
+<p>
+  グリッチを行う際、以下のルールを設けた。<br>
+  <ol>
+    <li>データに対する操作は次の4種類に限定する。
+      <ol style="list-style:lower-alpha">
+        <li>Replace: 任意の箇所のバイト列を、同サイズの任意のバイト列に置き換える</li>
+        <li>Increase: 任意の箇所のバイト列を、それより大きなサイズの任意のバイト列に置き換える</li>
+        <li>Decrease: 任意の箇所のバイト列を、削除する</li>
+        <li>Swap: 任意の箇所のバイト列と他の任意の箇所のバイト列を入れ替える</li>
+      </ol>
+    </li>
+    <li>1以外の操作によって素材の表示を変化させない。リサイズをしない。リサンプルや品質劣化をできるかぎり避ける。</li>
+    <li>1の操作では、必要がないかぎりヘッダ領域とデータ領域を区別しない。</li>
+    <li>1の操作はすべてプログラムによって行う。</li>
+  </ol>
+</p>
+
+<h3>JPEG</h3>
+<p>
+現在もっとも普及している画像フォーマット。破損耐性が非常に高く壊れてもたいてい表示が可能であるため、グリッチしたものをインターネット上で頻繁に目撃することができる。そのため画像グリッチとして広く知られるのはこのJPEGのグリッチである。グリッチの効果は、グリッド状のズレ、発色の変化など。JPEG特有の劣化ノイズであるいわゆるモスキートノイズのパターンがグリッチによって現れることもあるようだ。JPEGは圧縮の際、データを8x8ピクセルごとに分割して管理する。正方形のノイズが現れるのはそのためである。ヘッダ領域を破損すると表示できなくなる場合が多いが、稀にタイルのような効果を生むことがある。CMYKカラースペースで保存されたデータはグリッチの際の変色がよりカラフルになるようだ。JPEGのインターレース仕様であるプログレッシブモードで保存された画像はグリッチした際、残像のような効果を生む。
+</p>
+
+<h3>JPEG 2000</h3>
+<p>
+JPEGの後継規格として開発されたフォーマット。圧縮率が高く品質劣化が少ないとされる。グリッチの効果は、波紋のようなブラー、正方形の網のようなノイズ、昆虫の表皮にありそうなカラフルな紋様状のノイズ、など。
+</p>
+
+<h3>JPEG XR</h3>
+<p>
+マイクロソフトが開発しJPEG規格となった新しいフォーマット。グリッチの効果は、格子状のブラー、原色の矩形塗りつぶし、ライフゲームのパターンあるいは雪の結晶を思わせる細かく規則的な模様。
+</p>
+
+<h3>PNG</h3>
+<p>
+PNGは品質劣化のない可逆圧縮の画像フォーマット。ファイルフォーマット仕様にCRCと呼ばれる誤り検出を持つため、やみくもにグリッチしたものは開けないファイルになる。そのためPNGをグリッチするためには、グリッチした後にその破損したデータから計算し直したCRCを付与する必要がある。<br>
+PNGの圧縮はおおまかに2段階の手順を踏む。まず圧縮前のデータに、圧縮効率がよくなるようにフィルタリングと呼ばれる処理を施す。そののち、zip圧縮としても有名なDeflateという圧縮を掛ける。グリッチをかけるタイミングは、フィルタリングされた圧縮前、そして圧縮後の2つ存在する。<br>
+圧縮前のデータに対するグリッチの効果は、フィルタリングのタイプによって異なる。PNGのフィルタリングにはSub、
+Up、Average、Peath、加えてフィルタリング無しを意味するNoneの5種類があり、Subは横方向へのカラフルな線状のノイズ効果、Upは縦方向へのカラフルな線状のノイズ、Averageは左上から右下へ斜めにかかる虹色の光彩のような変色効果、PeathとNoneは原色で半透明の様々な形のピクセルノイズが無数に重なりあう他には見られない独特の効果を、それぞれグリッチの効果として持つ。また、過度な破損は砂嵐のような効果となる。<br>
+圧縮後のデータに対するグリッチは、おおむね砂嵐のような効果、細部にフィルタリング由来の効果。<br>
+また、インターレースモードのPNGは二重のグリッチ効果となる。そのとき、Averageフィルターのものは斜めの角度が異なる。
+</p>
+
+<h3>GIF</h3>
+<p>
+GIFは可逆圧縮の画像フォーマットだが、仕様上色数が制限されているため、写真などはかならず減色劣化することになる。その劣化はグリッチとは関係がない。GIFのグリッチ効果はピクセルの横へのズレ、それだけである。まれにヘッダ領域のカラーテーブルを破損することがあるが、目視できるほどの変化は生まれない。<br>
+インターレースモードのGIFは二重のグリッチ効果となる。
+</p>
+
+<h3>SGI</h3>
+<p>
+SGIはシリコングラフィックス用の画像フォーマット。グリッチの効果は、横方向への線状のノイズ、RGBのズレの効果。
+</p>
+
+<h3>PSD</h3>
+<p>
+PSDはAdobe Photoshop用のファイルフォーマット。グリッチの効果は、色空間のズレ、一部分の縦への連続表示、黒の塗りつぶしに規則的な模様、など。
+</p>
+
+<h3>PPM/PCX</h3>
+<p>
+PPMとPCXは、それぞれ関係のない画像形式だが、グリッチの効果は非常に似ている。矩形の減色とズレ。</p>
+
+<h3>RAW/BMP/TGA</h3>
+<p>
+これらの3種類の画像フォーマットのグリッチ効果はほぼ同じである。
+</p>
+
+<h3>TIFF</h3>
+<p>
+TIFFは多様な圧縮方式をサポートしている。ここでは無圧縮、LWZ、ZIP、JPEG、の4種の圧縮方式を取り上げた。当然だがグリッチする前はどれがどの圧縮であるか目で見てもわからない。無圧縮はBMPなどとグリッチ効果が似ている。LWZはGIFに採用されている圧縮形式、ZIPはPNGに採用されている圧縮形式、JPEGはJPEG圧縮の援用である。それぞれ比較してみることでグリッチ効果の共通点を見いだせるかもしれない。
+</p>
+
+<h3>ILBM</h3>
+<p>
+ILBMはAmiga用のファイルフォーマットだったようだ。グリッチの効果は、矩形のズレ、減色かつ変色による極彩色の模様、カラフルな砂嵐のような効果。
+</p>
+
+<h3>WEBP</h3>
+<p>
+元々On2テクノロジー社が開発していたVP8という動画コーデックで使われていた圧縮形式を元にした画像フォーマット。同社を買収したグーグル社が画像用に応用し規格化したのがWebPである。グリッチの効果は、絵の具が斜めに流れ崩れているような効果。
+</p>
+
+</div>
+</div>
+</body>
+</html>

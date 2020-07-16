@@ -1,0 +1,206 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,600);
+
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Lato, "FOT-筑紫ゴシック Pr5N L", sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  position: relative;
+  font-weight: 100;
+  font-size: 150px;
+  line-height: 1.0;
+  padding-bottom: 50px;
+
+}
+
+.buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 140px;
+  width: 280px;
+}
+
+.button {
+  width: 140px;
+  height: 140px;
+  float: left;
+  position: relative;
+}
+
+.button.light {
+  background: url(light.png) left bottom;
+}
+
+.button.dark {
+  background: url(dark.png) right top;
+}
+
+.button a {
+  transition: background-color .3s ease 0;
+  text-decoration: none;
+  position: absolute;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.button a.buy {
+  bottom: 0;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 300;
+  background-color: rgba(255, 255, 140, .85);
+  color: #000;
+  height: 35px;
+  padding-top: 5px;
+}
+
+.button a.buy:hover {
+  background-color: rgb(255, 255, 40);
+}
+
+.button a.switch {
+  font-weight: 100;
+  font-size: 55px;
+  color: #fff;
+  height: 85px;
+  padding-top: 15px;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.button a.switch:hover {
+  background-color: transparent
+}
+
+.info {
+  position: absolute;
+  line-height: 1.4;
+  width: 280px;
+  bottom: 26px;
+  right: 0;
+  font-size: 15px;
+  color: #fff;
+}
+
+.info h4 {
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.info a {
+  color: #fff;
+}
+
+.info p {
+  margin: 2px 3px;
+}
+
+.info p.i {
+  letter-spacing: 1px;
+}
+
+.info .s {
+  font-size: 10px;
+}
+
+.map {
+  width: 280px;
+  height: 100px;
+}
+
+.news {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  font-size: 12px;
+  color: #000;
+  background-color: #fff;
+  padding: 5px;
+  height: 15px;
+}
+
+#bg {
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+}
+
+#bg .loading {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+h1 {
+  font-size: 270px;
+}
+
+.buttons, .info {
+  position: relative;
+  width: 1024px;
+}
+
+.buttons {
+  height: 400px;
+}
+
+.button {
+  width: 512px;
+  height: 400px;
+}
+
+.button a.buy {
+  height: 130px;
+  padding-top: 30px;
+  font-size: 70px;
+}
+
+.button a.switch {
+  font-size: 150px;
+  height: 210px;
+  padding-top: 30px;
+}
+
+.info {
+  font-size: 40px;
+  padding-top: 50px;
+}
+
+.info h4 {
+  margin-top: 20px;
+  font-size: 60px;
+}
+
+.info .map {
+  display: none;
+}
+
+.info .s {
+  font-size: 30px;
+}
+
+.news {
+  position: relative;
+  font-size: 30px;
+  height: 100px;
+  line-height: 1.1;
+}
+
+
+}
+
