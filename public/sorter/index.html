@@ -38,7 +38,8 @@
     const button = document.querySelector('#sort')
     const tweet = document.querySelector('#tweet')
     const sort = value => {
-      return value.split('').sort().join('')
+      console.log([...value].sort())
+      return [...value].sort().join('').replaceAll('\n', '').replaceAll(' ', '')
     }
     button.addEventListener('click', () => {
       text.value = sort(text.value)
