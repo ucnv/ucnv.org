@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorter</title>
+    <style>
+      section {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      #text {
+        font-size: 16px;
+        width: 100%;
+        height: 7em;
+      }
+      button {
+        vertical-align: top;
+        height: 26px;
+        font-size: 16px;
+        padding: 0 10px;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Sorter</h1>
+      <textarea id="text"></textarea>
+      <p class="buttons">
+        <button id="sort">Sort</button>
+        <button id="tweet">Sort & Tweet</button>
+      </p>
+    </section>
+  </body>
+  <script>
+    const text = document.querySelector('#text')
+    const button = document.querySelector('#sort')
+    const tweet = document.querySelector('#tweet')
+    const sort = value => {
+      return value.split('').sort().join('')
+    }
+    button.addEventListener('click', () => {
+      text.value = sort(text.value)
+    }))
+    tweet.addEventListener('click', el => {
+      const value = sort(text.value)
+      const href = 'https://twitter.com/share?url=&text=' + encodeURIComponent(value)
+      window.open(href, '_blank')
+    })
+    
+  </script>
+</html>
