@@ -8,6 +8,7 @@
       section {
         max-width: 500px;
         margin: 0 auto;
+        padding: 0 .7em;
       }
       #text {
         font-size: 16px;
@@ -15,12 +16,16 @@
         height: 10em;
         padding: 5px;
       }
+      .buttons {
+        margin-top: .1em;
+      }
       button {
         vertical-align: top;
         height: 26px;
         font-size: 16px;
         padding: 0 10px;
         margin-right: 5px;
+        margin-top: .5em;
       }
     </style>
   </head>
@@ -29,6 +34,7 @@
       <h1>Sorter</h1>
       <textarea id="text"></textarea>
       <p class="buttons">
+        <input type="checkbox" id="remove-spaces" checked><label for="remove-spaces">Remove spaces and breaks</label><br>
         <button id="sort">Sort</button>
         <button id="tweet">Sort & Tweet</button>
       </p>
@@ -36,10 +42,12 @@
   </body>
   <script>
     const text = document.querySelector('#text')
+    const check = document.querySelector('#remove-spaces')
     const button = document.querySelector('#sort')
     const tweet = document.querySelector('#tweet')
     const sort = value => {
-      return [...value].sort().join('').replaceAll('\n', '').replaceAll(' ', '')
+      let sorted = [...value].sort().join('')
+      return check.checked ? sorted.replaceAll('\n', '').replaceAll(' ', '') : sorted
     }
     button.addEventListener('click', () => {
       text.value = sort(text.value)
