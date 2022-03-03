@@ -55,7 +55,7 @@
     tweet.addEventListener('click', el => {
       const value = sort(text.value)
       const href = 'https://twitter.com/share?url=&text=' + encodeURIComponent(value)
-      window.open(href, '_blank')
+      window.open(href, '_blank', 'noreferrer')
     })
     
   </script>
