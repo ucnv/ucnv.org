@@ -167,6 +167,10 @@ h2.heading {
   font-weight: 600;
   font-size: 23px;
   border-bottom: 1px dashed #777;
+
+  @media (max-width: 900px) {
+    padding: 0 .5em;
+  }
 }
 
 h3 {
@@ -394,6 +398,16 @@ body.about {
     line-height: 1.2;
     overflow-wrap: break-word;
     word-wrap: break-word;
+
+    @media (max-width: 900px) {
+      padding: 0 .5em;
+
+      img, video {
+        margin-left: -.5em;
+        margin-right: -.5em;
+        max-width: calc(100% + 1em);
+      }
+    }
   }
 
   h3 {

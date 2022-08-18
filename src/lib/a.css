@@ -122,6 +122,9 @@ h2.heading {
   font-weight: 600;
   font-size: 23px;
   border-bottom: 1px dashed #777; }
+  @media (max-width: 900px) {
+    h2.heading {
+      padding: 0 .5em; } }
 
 h3 {
   margin-top: 5px;
@@ -285,6 +288,13 @@ body.about .social {
     line-height: 1.2;
     overflow-wrap: break-word;
     word-wrap: break-word; }
+    @media (max-width: 900px) {
+      .content.project p {
+        padding: 0 .5em; }
+        .content.project p img, .content.project p video {
+          margin-left: -.5em;
+          margin-right: -.5em;
+          max-width: calc(100% + 1em); } }
   .content.project h3 {
     margin-top: 50px; }
   .content.project .embed {
