@@ -1,5 +1,11 @@
 $font: 'Crimson Text', '游明朝体', 'Yu Mincho', YuMincho, 'Hiragino Mincho ProN', serif;
 
+$bgcolor: #ccc8cc;
+$bgcolor-hover: #efeaef;
+$textcolor: #333;
+$textcolor-hover: #777;
+$navcolor: #fff;
+
 // ----------------------------------- mixins
 @mixin phone {
   @media (max-width: 768px) {
@@ -59,7 +65,7 @@ $font: 'Crimson Text', '游明朝体', 'Yu Mincho', YuMincho, 'Hiragino Mincho P
 .icon-vimeo:before { content: "\f152"; }
 
 
-// ----------------------------------- styles
+// ----------------------------------- style
 body, h1, h2, h3, h4, ul, li {
   margin: 0;
   padding: 0;
@@ -70,8 +76,8 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
-  color: #333;
-  background-color: #ccc;
+  color: $textcolor;
+  background-color: $bgcolor;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -106,7 +112,7 @@ header {
 
     a {
       text-decoration: none;
-      color: #fff;
+      color: $navcolor;
 
       &:hover {
         border-bottom: none;
@@ -127,16 +133,16 @@ header {
       a {
         font-weight: 600;
         text-decoration: none;
-        color: #fff;
+        color: $navcolor;
 
         &:hover {
           text-decoration: none;
-          border-bottom: 3px solid #fff;
+          border-bottom: 3px solid $navcolor;
         }
 
         &.focus {
           font-weight: 600;
-          border-bottom: 3px solid #fff;
+          border-bottom: 3px solid $navcolor;
         }
       }
     }
@@ -148,11 +154,11 @@ footer {
   letter-spacing: .5px;
   margin: 30px;
   font-size: 12px;
-  color: #fff;
+  color: $navcolor;
   text-transform: uppercase;
 
   a {
-    color: #fff;
+    color: $navcolor;
   }
 }
 
@@ -192,7 +198,7 @@ hr {
     width: 44px;
     line-height: 1;
     color: #999;
-    background-color: #ccc;
+    background-color: $bgcolor;
     font-size: 30px;
     text-align: center;
     font-family:  serif;
@@ -231,18 +237,17 @@ hr {
   a {
     padding: 15px 5px;
     display: inline-block;
-    color: #333;
-    background-color: #ccc;
-    border: 1px solid #ccc;
-    transition: color 1s ease,
-                background-color 1s ease,
-                border 1s ease;
+    color: $textcolor;
+    background-color: $bgcolor;
+    border: 1px solid $bgcolor;
+    transition: color .2s ease,
+                background-color .2s ease,
+                border .2s ease;
     text-decoration: none;
 
     &:hover {
-      background-color: #e0e0e0;
-      border: 1px solid #c0c0c0;
-      color: #666;
+      background-color: $bgcolor-hover;
+      color: $textcolor-hover;
     }
   }
 }
@@ -253,7 +258,7 @@ body.index {
     height: 1200px;
     width: 100%;
     overflow: hidden;
-    background: url(images/top.png) center top;
+    background: url(images/top2.jpg) center center;
 
     @media (min-width: 1920px) {
       background-size: cover;
@@ -295,7 +300,7 @@ body.works {
   }
 
   .work {
-    width: 300px;
+    width: 304px;
   }
 }
 
@@ -332,7 +337,7 @@ body.upcoming {
     span {
       &.category {
         padding-right: 5px;
-        color: #888;
+        color: $textcolor-hover;
       }
 
       &.summary {
@@ -353,13 +358,13 @@ body.about {
       margin-right: 15px;
 
       a {
-        color: #333;
+        color: $textcolor;
         font-size: 25px;
         line-height: 1;
 
         &:hover {
           border: 0;
-          color: #666;
+          color: $textcolor-hover;
         }
       }
     }

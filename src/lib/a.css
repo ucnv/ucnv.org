@@ -56,7 +56,7 @@ body {
   font-size: 18px;
   line-height: 1.5;
   color: #333;
-  background-color: #ccc;
+  background-color: #ccc8cc;
   -webkit-text-size-adjust: 100%; }
 
 ::-moz-selection {
@@ -150,7 +150,7 @@ hr {
     width: 44px;
     line-height: 1;
     color: #999;
-    background-color: #ccc;
+    background-color: #ccc8cc;
     font-size: 30px;
     text-align: center;
     font-family: serif; }
@@ -178,20 +178,19 @@ hr {
     padding: 15px 5px;
     display: inline-block;
     color: #333;
-    background-color: #ccc;
-    border: 1px solid #ccc;
-    transition: color 1s ease, background-color 1s ease, border 1s ease;
+    background-color: #ccc8cc;
+    border: 1px solid #ccc8cc;
+    transition: color .2s ease, background-color .2s ease, border .2s ease;
     text-decoration: none; }
     .work a:hover {
-      background-color: #e0e0e0;
-      border: 1px solid #c0c0c0;
-      color: #666; }
+      background-color: #efeaef;
+      color: #777; }
 
 body.index .cover {
   height: 1200px;
   width: 100%;
   overflow: hidden;
-  background: url(images/top.png) center top; }
+  background: url(images/top2.jpg) center center; }
   @media (min-width: 1920px) {
     body.index .cover {
       background-size: cover; } }
@@ -223,7 +222,7 @@ body.works .content {
       padding: 0; } }
 
 body.works .work {
-  width: 300px; }
+  width: 304px; }
 
 body.about .content, body.upcoming .content {
   width: 700px;
@@ -246,7 +245,7 @@ body.upcoming .vevent {
   margin-top: 10px; }
   body.upcoming .vevent span.category {
     padding-right: 5px;
-    color: #888; }
+    color: #777; }
   body.upcoming .vevent span.summary {
     padding-left: 5px; }
 
@@ -267,7 +266,7 @@ body.about .social {
       line-height: 1; }
       body.about .social li a:hover {
         border: 0;
-        color: #666; }
+        color: #777; }
 
 .content.project {
   margin: 120px auto;
