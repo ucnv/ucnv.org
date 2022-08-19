@@ -7,6 +7,11 @@ $textcolor-hover: #777;
 $navcolor: #fff;
 
 // ----------------------------------- mixins
+@mixin tablet {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
 @mixin phone {
   @media (max-width: 768px) {
     @content;
@@ -163,12 +168,12 @@ footer {
 }
 
 h2.heading {
-  margin-top: 2em;
+  margin: 2em 0 1em;
   font-weight: 600;
   font-size: 23px;
   border-bottom: 1px dashed #777;
 
-  @media (max-width: 900px) {
+  @include tablet {
     padding: 0 .5em;
   }
 }
@@ -379,19 +384,27 @@ body.about {
   margin: 120px auto;
   max-width: 900px;
 
-  @include phone {
-    width: auto;
-    margin: 120px 8%;
-  }
-
   img, video {
     max-width: 100%;
     height: auto;
-    margin: 12px auto 0 ;
+    margin: 6px auto;
   }
 
   video {
     background-color: #000;
+  }
+
+  figure {
+    margin: 0;
+
+    figcaption {
+      font-size: 16px;
+      margin: .2em 0 .5em;
+
+      @include tablet {
+        padding: 0 .5em;
+      }
+    }
   }
 
   p {
@@ -399,7 +412,7 @@ body.about {
     overflow-wrap: break-word;
     word-wrap: break-word;
 
-    @media (max-width: 900px) {
+    @include tablet {
       padding: 0 .5em;
 
       img, video {
@@ -412,6 +425,10 @@ body.about {
 
   h3 {
     margin-top: 50px;
+
+    @include tablet {
+      padding: 0 .5em;
+    }
   }
 
   .embed {
@@ -420,6 +437,7 @@ body.about {
     height: 0;
     overflow: hidden;
     max-width: 100%;
+    margin: 12px auto 0;
     
     iframe {
       position: absolute;
@@ -428,7 +446,16 @@ body.about {
       width: 100%;
       height: 100%;
     }
+
+    &.portrait {
+      padding-bottom: 900px;
+
+      @include phone {
+        padding-bottom: 100% * 1920 / 1080;
+      }
+    }
   }
+
   .credit {
     display: block;
     line-height: 1.1 !important;
