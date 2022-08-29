@@ -43,10 +43,18 @@
     <img src="02.jpg" alt="">
   </figure>
   <p>
-    <em>E</em> is a series of digital images in which each image has three different versions. One of them is an original picture of the sky. The other two are encoded by the artist's own implemented JPEG and PNG encoders. These two encoders are intentionally made with the wrong algorithms.
+    <em>E</em> is a series of digital images in which each image has three different versions. One of them is an original picture of a sky. The other two are encoded from the original picture using the artist's own implemented JPEG and PNG encoders. These two encoders are intentionally made with the slightly wrong algorithms. 
+  </p>
+  <p>
+    In the photo above, from left to right, the original image, JPEG, and PNG are in that order.
+    Each image has the same original representational source but different internal data. This, of course, is what happens when they are converted to different file formats. However, when encoded correctly, the difference is not visible. An incorrect encoding causes an obvious change in appearance. What is expressed here is not only a difference in data content but also a difference in the data structure.
+  </p>
+  <p>
+    Technically, this JPEG encoder processes the array reads called zig-zag scan in the wrong order, and the PNG encoder processes the misplaced data references in its filter algorithm.
   </p>
   <p>
     This project is to combine and compare the author's two existing projects, <a href="/jpegsinyourbrain"><em>Jpegs in Your Brain</em> (2013)</a> and <a href="/pngencodedbyanincorrectlyimplementedmethod"><em>PNG encoded by an incorrectly implemented method</em> (2016-)</a>.
+    Technically, this JPEG encoder processes the array reads called zig-zag scan in the wrong order, and the PNG encoder processes the misplaced data references in its filter algorithm.
   </p>
   <p>
     <br>
