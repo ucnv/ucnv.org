@@ -60,10 +60,12 @@ body {
   -webkit-text-size-adjust: 100%; }
 
 ::-moz-selection {
-  background-color: #ff9; }
+  background-color: #efeaef;
+  color: #777; }
 
 ::selection {
-  background-color: #ff9; }
+  background-color: #efeaef;
+  color: #777; }
 
 a {
   text-decoration-skip: ink;

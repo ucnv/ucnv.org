@@ -87,11 +87,13 @@ body {
 }
 
 ::-moz-selection {
-  background-color: #ff9;
+  background-color: $bgcolor-hover;
+  color: $textcolor-hover;
 }
 
 ::selection {
-  background-color: #ff9;
+  background-color: $bgcolor-hover;
+  color: $textcolor-hover;
 }
 
 a {
