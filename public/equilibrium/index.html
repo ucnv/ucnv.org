@@ -20,8 +20,8 @@
 <meta name="twitter:image" content="https://ucnv.org/equilibrium/10.jpg">
 <link rel="shortcut icon" href="/assets/favicon.ico">
 <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600,600i,700" rel="stylesheet">
-<link rel="stylesheet" href="/assets/a.css?v4">
-<script src="/assets/a.js?v4"></script>
+<link rel="stylesheet" href="/assets/a.css?v5">
+<script src="/assets/a.js?v5"></script>
 </head>
 <body class="equilibrium">
 <header>
@@ -36,14 +36,19 @@
 </header>
 
 <style>
-  .grid {
+  .content.project p.grid {
     grid-template-columns: 32.5% 32.5% 32.5%;
+  }
+  @media (max-width: 768px) {
+    .content.project p.grid.top {
+      display: block;
+    }
   }
 </style>
 <div class="content project">
   <h2 class="heading">Equilibrium</h2>
 
-  <p class="grid">
+  <p class="grid top">
     <img src="01_1.jpg" alt="">
     <img src="01_2.jpg" alt="">
     <img src="01_3.jpg" alt="">
