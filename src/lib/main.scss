@@ -421,6 +421,27 @@ body.about {
         max-width: calc(100% + 1em);
       }
     }
+
+    &.grid {
+      display: grid;
+      justify-content: space-between;
+
+      img {
+        margin-bottom: 13px;
+      }
+
+      @include tablet {
+        margin-left: -.5em;
+        margin-right: -.5em;
+        padding: 0 .5em;
+
+        img, video {
+          margin-left: 0;
+          margin-right: 0;
+          max-width: 100%;
+        }
+      }
+    }
   }
 
   h3 {

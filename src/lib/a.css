@@ -299,6 +299,20 @@ body.about .social {
           margin-left: -.5em;
           margin-right: -.5em;
           max-width: calc(100% + 1em); } }
+    .content.project p.grid {
+      display: grid;
+      justify-content: space-between; }
+      .content.project p.grid img {
+        margin-bottom: 13px; }
+      @media (max-width: 900px) {
+        .content.project p.grid {
+          margin-left: -.5em;
+          margin-right: -.5em;
+          padding: 0 .5em; }
+          .content.project p.grid img, .content.project p.grid video {
+            margin-left: 0;
+            margin-right: 0;
+            max-width: 100%; } }
   .content.project h3 {
     margin-top: 50px; }
     @media (max-width: 900px) {
