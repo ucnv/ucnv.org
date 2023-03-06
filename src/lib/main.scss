@@ -431,9 +431,7 @@ body.about {
       }
 
       @include tablet {
-        margin-left: -.5em;
-        margin-right: -.5em;
-        padding: 0 .5em;
+        padding: 0;
 
         img, video {
           margin-left: 0;

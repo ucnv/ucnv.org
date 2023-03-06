@@ -306,9 +306,7 @@ body.about .social {
         margin-bottom: 13px; }
       @media (max-width: 900px) {
         .content.project p.grid {
-          margin-left: -.5em;
-          margin-right: -.5em;
-          padding: 0 .5em; }
+          padding: 0; }
           .content.project p.grid img, .content.project p.grid video {
             margin-left: 0;
             margin-right: 0;
